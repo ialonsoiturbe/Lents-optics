@@ -1,16 +1,16 @@
 #include <stdio.h>
 #include <math.h>
 
-/*El programa ejecuta un bucle para cada rayo. En el bucle calcula la intersección
-del rayo con la primera lente, la intersección con la segunda lente y la intersección 
+/*El programa ejecuta un bucle para cada rayo. En el bucle calcula la interseccion
+del rayo con la primera lente, la intersección con la segunda lente y la interseccion 
 con el eje (y=0). 
--La intersección la he comprobado manualmente. a lápiz y papel. Funciona. Aunque solo
-acepta valores positivos de h. Qué se la va a hacer! Aunque no es inconveniente debido
-a la simetría de la lente
--Para calcular la intersección se utiliza el método de bisecciones. Más cómodo y con un 
-error mínimo.
--Para calcular la inclinación que sufre el rayo se utilizan vectores. Se gira el vector del
-normal a la superficie el ángulo de refracción. 
+-La interseccion la he comprobado manualmente. a lapiz y papel. Funciona. Aunque solo
+acepta valores positivos de h. Que se la va a hacer! Aunque no es inconveniente debido
+a la simetria de la lente
+-Para calcular la interseccion se utiliza el método de bisecciones. Mas comodo y con un 
+error minimo.
+-Para calcular la inclinacion que sufre el rayo se utilizan vectores. Se gira el vector del
+normal a la superficie el angulo de refraccion. 
 -Se imprime por pantalla y en un archivo datos.dat.
 */
 
@@ -18,19 +18,19 @@ normal a la superficie el ángulo de refracción.
 R1 = +14.25	Radio de la primera lente
 R2 = -9.47	Radio de la segunda lente
 d  =  6.4	distancia entre lentes
-n  = 1.61765	índice de refracción
+n  = 1.61765	índice de refraccion
 ////////////////////////////////////////////////////////////////////////////////////////
 
 /////////////////////////////////CRITERIO DE SIGNOS/////////////////////////////////////
 Como trabajamos con vectores es bastante necesario aclarar estas cosas:
-ORIGEN DE REFERENCIA: Lo situamos en la primera lente. (Intersección lente-eje óptico
+ORIGEN DE REFERENCIA: Lo situamos en la primera lente. (Intersección lente-eje optico
 SIGNOS PARA LOS VECTORES: Trabajamos en ejes cartesiano: 
 				Hacia arriba 	 - positivo
 				Hacia la derecha - positivo
 SIGNOS PARA LOS ÁNGULOS: 
 			giro antihorario 	- positivo
 			giro horario		- negativo
-Es bastante útil, para implementar la Ley de Snell, tener este criterio de ángulos
+Es bastante util, para implementar la Ley de Snell, tener este criterio de angulos
 ////////////////////////////////////////////////////////////////////////////////////////
 */
 /*
